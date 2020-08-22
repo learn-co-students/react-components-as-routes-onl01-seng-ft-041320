@@ -10,6 +10,13 @@ ReactDOM.render(
   <Router>
     <div>
       <Navbar />
+      {/* a way to render more than one component in one route
+      <Route exact path="/" render={props =>
+        <div>
+          <Home />
+          < About />
+        </div>
+      } /> */}
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About} />
       <Route exact path="/login" component={Login} />
