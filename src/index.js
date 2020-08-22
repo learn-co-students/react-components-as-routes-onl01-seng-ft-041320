@@ -17,6 +17,8 @@ ReactDOM.render(
           < About />
         </div>
       } /> */}
+      {/* or here's a way to just use render, which is what a 'component' is doing:
+      <Route path="/" render={() => <h1>Home!</h1>} /> */}
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About} />
       <Route exact path="/login" component={Login} />
